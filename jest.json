@@ -1,0 +1,177 @@
+{
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest.setup.ts"
+  ],
+  "moduleNameMapper": {
+    "^@/components/(.*)$": "<rootDir>/components/$1",
+    "^@/pages/(.*)$": "<rootDir>/pages/$1",
+    "^.+\\.module\\.(css|sass|scss)$": "/home/nicojs/github/next-js/my-app/node_modules/next/dist/build/jest/object-proxy.js",
+    "^.+\\.(css|sass|scss)$": "/home/nicojs/github/next-js/my-app/node_modules/next/dist/build/jest/__mocks__/styleMock.js",
+    "^.+\\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg)$": "/home/nicojs/github/next-js/my-app/node_modules/next/dist/build/jest/__mocks__/fileMock.js"
+  },
+  "extensionsToTreatAsEsm": [
+    ".ts",
+    ".tsx"
+  ],
+  "testEnvironment": "jest-environment-jsdom",
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "/.next/"
+  ],
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx|mjs)$": [
+      "/home/nicojs/github/next-js/my-app/node_modules/next/dist/build/swc/jest-transformer.js",
+      {
+        "nextConfig": {
+          "env": {},
+          "webpack": null,
+          "webpackDevMiddleware": null,
+          "eslint": {
+            "ignoreDuringBuilds": false
+          },
+          "typescript": {
+            "ignoreBuildErrors": false,
+            "tsconfigPath": "tsconfig.json"
+          },
+          "distDir": ".next",
+          "cleanDistDir": true,
+          "assetPrefix": "",
+          "configOrigin": "next.config.js",
+          "useFileSystemPublicRoutes": true,
+          "generateEtags": true,
+          "pageExtensions": [
+            "tsx",
+            "ts",
+            "jsx",
+            "js"
+          ],
+          "target": "server",
+          "poweredByHeader": true,
+          "compress": true,
+          "analyticsId": "",
+          "images": {
+            "deviceSizes": [
+              640,
+              750,
+              828,
+              1080,
+              1200,
+              1920,
+              2048,
+              3840
+            ],
+            "imageSizes": [
+              16,
+              32,
+              48,
+              64,
+              96,
+              128,
+              256,
+              384
+            ],
+            "path": "/_next/image",
+            "loader": "default",
+            "domains": [],
+            "disableStaticImages": false,
+            "minimumCacheTTL": 60,
+            "formats": [
+              "image/webp"
+            ],
+            "dangerouslyAllowSVG": false,
+            "contentSecurityPolicy": "script-src 'none'; frame-src 'none'; sandbox;"
+          },
+          "devIndicators": {
+            "buildActivity": true,
+            "buildActivityPosition": "bottom-right"
+          },
+          "onDemandEntries": {
+            "maxInactiveAge": 15000,
+            "pagesBufferLength": 2
+          },
+          "amp": {
+            "canonicalBase": ""
+          },
+          "basePath": "",
+          "sassOptions": {},
+          "trailingSlash": false,
+          "i18n": null,
+          "productionBrowserSourceMaps": false,
+          "optimizeFonts": true,
+          "excludeDefaultMomentLocales": true,
+          "serverRuntimeConfig": {},
+          "publicRuntimeConfig": {},
+          "reactStrictMode": true,
+          "httpAgentOptions": {
+            "keepAlive": true
+          },
+          "outputFileTracing": true,
+          "staticPageGenerationTimeout": 60,
+          "swcMinify": false,
+          "experimental": {
+            "newNextLinkBehavior": false,
+            "cpus": 11,
+            "sharedPool": true,
+            "plugins": false,
+            "profiling": false,
+            "isrFlushToDisk": true,
+            "workerThreads": false,
+            "pageEnv": false,
+            "optimizeCss": false,
+            "nextScriptWorkers": false,
+            "scrollRestoration": false,
+            "externalDir": false,
+            "reactRoot": false,
+            "disableOptimizedLoading": false,
+            "gzipSize": true,
+            "swcFileReading": true,
+            "craCompat": false,
+            "esmExternals": true,
+            "rootDir": false,
+            "isrMemoryCacheSize": 52428800,
+            "serverComponents": false,
+            "fullySpecified": false,
+            "outputFileTracingRoot": "",
+            "outputStandalone": false,
+            "images": {
+              "layoutRaw": false
+            }
+          },
+          "configFile": "/home/nicojs/github/next-js/my-app/next.config.js",
+          "configFileName": "next.config.js"
+        },
+        "jsConfig": {
+          "compilerOptions": {
+            "target": 1,
+            "lib": [
+              "lib.dom.d.ts",
+              "lib.dom.iterable.d.ts",
+              "lib.esnext.d.ts"
+            ],
+            "allowJs": true,
+            "skipLibCheck": true,
+            "strict": true,
+            "forceConsistentCasingInFileNames": true,
+            "noEmit": true,
+            "esModuleInterop": true,
+            "module": 99,
+            "moduleResolution": 2,
+            "resolveJsonModule": true,
+            "isolatedModules": true,
+            "jsx": 1,
+            "incremental": true
+          }
+        },
+        "isEsmProject": false,
+        "pagesDir": "/home/nicojs/github/next-js/my-app/pages"
+      }
+    ]
+  },
+  "transformIgnorePatterns": [
+    "/node_modules/",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "watchPathIgnorePatterns": [
+    "/.next/"
+  ]
+}
