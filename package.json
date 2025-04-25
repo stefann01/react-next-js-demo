@@ -8,7 +8,8 @@
     "start": "concurrently \"node backend/server.js\" \"next start\"",
     "lint": "next lint",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
-    "test:ci": "NODE_OPTIONS=--experimental-vm-modules jest --ci"
+    "test:ci": "NODE_OPTIONS=--experimental-vm-modules jest --ci",
+    "dev-frontend": "next dev"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.5",

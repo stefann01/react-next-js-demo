@@ -36,3 +36,4 @@ yarn-error.log*
 
 # stryker temp files
 .stryker-tmp
+config.bat
